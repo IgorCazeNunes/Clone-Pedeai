@@ -1,0 +1,47 @@
+:root {
+    --bg-white: #ffffff;
+    --bg-gray: #f1f2f4;
+    --text: #333333;
+    --gray: #dcdcdc;
+    --red: #ff3333;
+}
+
+/*------------------------*
+ *         Header         *
+ *------------------------*/
+header {
+    display: flex;
+    flex-direction: column;
+
+    height: 70px;
+    width: 100%;
+}
+
+header .navbar {
+    flex: 1;
+
+    padding: 19px 25px;
+
+    background: var(--bg-white);
+    border-bottom: 2px solid var(--gray);
+}
+
+header .navbar .navbar-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .navbar .navbar-icon img {
+    height: 32px;
+    padding-right: 12px;
+}
+
+header .navbar .navbar-icon h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .navbar .navbar-icon h1 span {
+    color: var(--red);
+}
