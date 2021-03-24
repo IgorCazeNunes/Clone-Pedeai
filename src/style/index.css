@@ -73,7 +73,8 @@ main .main-header {
     width: 100%;
 
     background: url(../assets/images/background-main.png) no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position-y: -70px;
 }
 
 main .main-header h1,
@@ -135,4 +136,57 @@ main .main-header .button-group a i {
 main .main-header .button-group a:hover {
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.6) 3px 0px 10px;
+}
+
+/*------------------------*
+ *         Footer         *
+ *------------------------*/
+
+footer {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto 1fr 1fr 1fr;
+
+    margin-top: 60px;
+    padding: 40px 60px;
+
+    background-color: var(--bg-gray);
+    border-top: 2px solid var(--red);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul:before {
+    content:attr(aria-label);
+
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+footer ul li {
+    margin-top: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+
+    color: var(--text);
+    
+    transition: all 0.2s;
+}
+
+footer ul li a:hover {
+    color: var(--red);
+}
+
+
+footer ul .social-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul .social-list a {
+    font-size: 2.5rem;
 }
