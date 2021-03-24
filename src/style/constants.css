@@ -1,7 +1,9 @@
 :root {
     --bg-white: #ffffff;
     --bg-gray: #f1f2f4;
+    --bg-red: #ff3333;
     --text: #333333;
     --gray: #dcdcdc;
+    --white: #ffffff;
     --red: #ff3333;
 }
