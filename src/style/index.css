@@ -84,7 +84,7 @@ main .main-header {
 
     background: url(../assets/images/background-main.png) no-repeat;
     background-size: cover;
-    background-position-y: -70px;
+    background-position-y: bottom;
 }
 
 main .main-header h1,
