@@ -110,7 +110,7 @@ main .main-header h2 {
 main .main-header .button-group {
     display: flex;
     justify-content: space-between;
-    
+
     height: 55px;
     width: 600px;
 
@@ -190,6 +190,64 @@ main .category-container ul a img {
     border-radius: 6px;
 }
 
+
+/*------------------------*
+ *      Main Bennefits    *
+ *------------------------*/
+main .benefits-container ul {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    list-style: none;
+}
+
+main .benefits-container ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+
+    padding: 1.5rem;
+
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 9px;
+}
+
+main .benefits-container ul li i {
+    margin-top: -4rem;
+
+
+    color: var(--red);
+    font-size: 4rem;
+}
+
+main .benefits-container ul li article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    text-align: center;
+}
+
+main .benefits-container ul li article h3 {
+    color: var(--text);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+main .benefits-container ul li article p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
 /*------------------------*
  *         Footer         *
  *------------------------*/
@@ -211,7 +269,7 @@ footer ul {
 }
 
 footer ul:before {
-    content:attr(aria-label);
+    content: attr(aria-label);
 
     font-size: 1.25rem;
     font-weight: 600;
@@ -225,7 +283,7 @@ footer ul li a {
     text-decoration: none;
 
     color: var(--text);
-    
+
     transition: all 0.2s;
 }
 
