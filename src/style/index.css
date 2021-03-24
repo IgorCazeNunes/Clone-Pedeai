@@ -3,6 +3,7 @@
     --bg-gray: #f1f2f4;
     --text: #333333;
     --gray: #dcdcdc;
+    --white: #ffffff;
     --red: #ff3333;
 }
 
@@ -44,4 +45,94 @@ header .navbar .navbar-icon h1 {
 
 header .navbar .navbar-icon h1 span {
     color: var(--red);
+}
+
+/*------------------------*
+ *          Main          *
+ *------------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+
+/*------------------------*
+ *       Main Header      *
+ *------------------------*/
+main .main-header {
+    flex: 1 1 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: calc(100vh - 70px);
+    width: 100%;
+
+    background: url(../assets/images/background-main.png) no-repeat;
+    background-size: 100%;
+}
+
+main .main-header h1,
+main .main-header h2 {
+    color: var(--white);
+    text-align: center;
+    text-shadow: var(--text) 2px 2px 3px;
+}
+
+
+main .main-header h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+main .main-header h2 {
+    margin-top: 1rem;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+main .main-header .button-group {
+    display: flex;
+    justify-content: space-between;
+    
+    height: 55px;
+    width: 600px;
+
+    margin-top: 2rem;
+}
+
+main .main-header .button-group a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 285px;
+    padding: 10px;
+
+    text-decoration: none;
+
+    color: var(--red);
+    font-weight: 600;
+
+    background: var(--bg-white);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 0px 10px;
+
+    transition: all 0.2s;
+}
+
+main .main-header .button-group a i {
+    margin-right: 1rem;
+
+    font-size: 1.2rem;
+}
+
+main .main-header .button-group a:hover {
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.6) 3px 0px 10px;
 }
